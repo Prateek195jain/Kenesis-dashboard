@@ -5,8 +5,8 @@ import WalletTabs from "./WalletTabs";
 import { Route, Routes } from "react-router-dom";
 import { Withdrawls } from "@/pages/Withdrawls";
 import { Reimbursement } from "@/pages/Reimbursement";
-import { WalletCard } from "./WalletCard";
 import ProfilePage from "@/components/Settings/Pages/ProfilePage";
+import { WalletPage } from "../pages/WalletPage";
 
 export default function LayoutContent() {
   const { open } = useSidebar();
@@ -25,10 +25,10 @@ export default function LayoutContent() {
       <WalletTabs />
 
       <Routes>
-        <Route path="/wallet" element={<WalletCard />} />
+        <Route path="/wallet" element={<WalletPage />} />
         <Route path="/withdrawals" element={<Withdrawls />} />
         <Route path="/reimbursement" element={<Reimbursement />} />
-        <Route path="*" element={<WalletCard />} />
+        <Route path="*" element={<WalletPage />} />
         <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </main>

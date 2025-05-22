@@ -1,6 +1,6 @@
 import { ArrowUp } from "lucide-react";
-import { TransactionTable } from "./TransactionTable";
-import FilterSortBar from "./FilterSortBar";
+import { TransactionTable } from "../components/TransactionTable";
+import FilterSortBar from "../components/FilterSortBar";
 
 const cards = [
   {
@@ -53,7 +53,7 @@ const cards = [
   },
 ];
 
-export const WalletCard = () => {
+export const WalletPage = () => {
   return (
     <div className="mx-4 mt-10">
       <div className="bg-gradient-to-b from-[#0680FF] via-[#022ED2] to-transparent p-px mx-4 rounded-md">
