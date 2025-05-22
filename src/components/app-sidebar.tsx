@@ -24,8 +24,9 @@ import {
   LogOut,
 } from "lucide-react";
 
-import logo from "/public/images/logo.png";
+import logo from "/images/logo.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const items = [
   {
@@ -110,10 +111,12 @@ export function AppSidebar() {
           </SidebarGroupContent>
           <SidebarGroupContent>
             <div className="mt-8 space-y-2 p-2">
-              <button className="w-full text-left p-2 hover:bg-[linear-gradient(90deg,_#0C0A27_0%,_#022ED2_100%)] rounded-lg flex items-center gap-2">
-                <Settings className="w-4 h-4" />
-                Settings
-              </button>
+              <Link to="/profile">
+                <button className="w-full text-left p-2 hover:bg-[linear-gradient(90deg,_#0C0A27_0%,_#022ED2_100%)] rounded-lg flex items-center gap-2">
+                  <Settings className="w-4 h-4" />
+                  Settings
+                </button>
+              </Link>
               <button className="w-full text-left p-2 hover:bg-[linear-gradient(90deg,_#0C0A27_0%,_#022ED2_100%)] rounded-lg flex items-center justify-between">
                 <span className="flex items-center gap-2">
                   <MessageCircle className="w-4 h-4" />
@@ -132,7 +135,7 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <div className="mt-10 border border-blue-600 rounded-xl p-3 flex items-center gap-3 bg-white/5 hover:bg-white/10 transition">
               <img
-                src="public/images/profile.png"
+                src="/images/profile.png"
                 alt="Zyan"
                 className="w-10 h-10 rounded-full border border-white"
               />

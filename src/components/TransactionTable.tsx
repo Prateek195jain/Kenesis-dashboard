@@ -3,7 +3,7 @@ import type { Transaction } from "./type";
 
 const mockData: Transaction[] = [
   {
-    logo: "public/images/blue_logo.png",
+    logo: "/images/blue_logo.png",
     hash: "0xd46fe8f649371...",
     from: "0xee226379db83cffc689522436489425415788596515...",
     to: "0x0000000000000000000000000000000000000000",
@@ -11,7 +11,7 @@ const mockData: Transaction[] = [
     timeAgo: "17 secs ago",
   },
   {
-    logo: "public/images/blue_logo.png",
+    logo: "/images/blue_logo.png",
     hash: "0xd46fe8f649371...",
     from: "0xee226379db83cffc6458217695224444151585741381...",
     to: "0x0000000000000000000000000000000000000000",
@@ -19,7 +19,7 @@ const mockData: Transaction[] = [
     timeAgo: "29 secs ago",
   },
   {
-    logo: "public/images/blue_logo.png",
+    logo: "/images/blue_logo.png",
     hash: "0xd46fe8f649371...",
     from: "0xee226379db83cffc6854286931572871369952346481...",
     to: "0x0000000000000000000000000000000000000000",
@@ -27,7 +27,7 @@ const mockData: Transaction[] = [
     timeAgo: "32 secs ago",
   },
   {
-    logo: "public/images/blue_logo.png",
+    logo: "/images/blue_logo.png",
     hash: "0xd46fe8f649371...",
     from: "0xee226379db83cffc6845879363391254354698217891...",
     to: "0x0000000000000000000000000000000000000000",
@@ -35,7 +35,7 @@ const mockData: Transaction[] = [
     timeAgo: "45 secs ago",
   },
   {
-    logo: "public/images/blue_logo.png",
+    logo: "/images/blue_logo.png",
     hash: "0xd46fe8f649371...",
     from: "0xee226379db83cffc68786432896931424578932741...",
     to: "0x0000000000000000000000000000000000000000",
@@ -67,7 +67,6 @@ export function TransactionTable() {
                   </TableCell>
                 </div>
               </div>
-
               <div className="flex flex-col">
                 <TableCell className="font-medium">
                   From: <span className="text-blue-500">{row.from}</span>

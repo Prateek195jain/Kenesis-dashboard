@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import { Withdrawls } from "@/pages/Withdrawls";
 import { Reimbursement } from "@/pages/Reimbursement";
 import { WalletCard } from "./WalletCard";
+import ProfilePage from "@/components/Settings/Pages/ProfilePage";
 
 export default function LayoutContent() {
   const { open } = useSidebar();
@@ -28,6 +29,7 @@ export default function LayoutContent() {
         <Route path="/withdrawals" element={<Withdrawls />} />
         <Route path="/reimbursement" element={<Reimbursement />} />
         <Route path="*" element={<WalletCard />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </main>
   );
