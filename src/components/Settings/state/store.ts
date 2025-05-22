@@ -20,9 +20,9 @@ interface profileType {
 }
 
 export const userProfileStore = create<profileType>((set) => ({
-  name: "Gago Official",
+  name: "",
   username: "",
-  bio: "Gago is one and only design system for intelligent, lazy gen Z people.",
+  bio: "",
   profilePicture: "/images/profile.png",
   facebook: "",
   twitter: "",
