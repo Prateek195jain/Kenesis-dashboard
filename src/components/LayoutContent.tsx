@@ -5,8 +5,8 @@ import WalletTabs from "./WalletTabs";
 import { Route, Routes } from "react-router-dom";
 import { Withdrawls } from "@/pages/Withdrawls";
 import { Reimbursement } from "@/pages/Reimbursement";
-import ProfilePage from "@/components/Settings/Pages/ProfilePage";
 import { WalletPage } from "../pages/WalletPage";
+import ProfilePage from "@/Features/Settings/pages/ProfilePage";
 
 export default function LayoutContent() {
   const { open } = useSidebar();

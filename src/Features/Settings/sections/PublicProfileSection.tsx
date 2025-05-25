@@ -1,20 +1,20 @@
 import { User } from "lucide-react";
-import SocialInput from "../SocialInput";
+import SocialInput from "../components/SocialInput";
 
 interface Props {
   tooltip: string;
-  localName: string;
-  setLocalName: (value: string) => void;
-  localUsername: string;
-  setLocalUsername: (value: string) => void;
+  name: string;
+  onNameChange: (value: string) => void;
+  username: string;
+  onUsernameChange: (value: string) => void;
 }
 
 const PublicProfileSection = ({
   tooltip,
-  localName,
-  setLocalName,
-  localUsername,
-  setLocalUsername,
+  name,
+  onNameChange,
+  username,
+  onUsernameChange,
 }: Props) => {
   return (
     <div className="flex flex-col lg:flex-row p-5 gap-2 lg:gap-10 border-b-[0.5px] border-b-white/30">
@@ -40,8 +40,8 @@ const PublicProfileSection = ({
             type="text"
             className="py-4 outline-0 bg-transparent text-white"
             placeholder="Gago Official"
-            value={localName}
-            onChange={(e) => setLocalName(e.target.value)}
+            value={name}
+            onChange={(e) => onNameChange(e.target.value)}
             autoComplete="off"
           />
         </div>
@@ -49,8 +49,8 @@ const PublicProfileSection = ({
         <SocialInput
           URL="https://gago.com/"
           placeholder="X_AE_A-22"
-          value={localUsername}
-          onChange={setLocalUsername}
+          value={username}
+          onChange={onUsernameChange}
         />
       </div>
     </div>

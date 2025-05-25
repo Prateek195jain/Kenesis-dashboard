@@ -1,9 +1,9 @@
 interface Props {
-  localBio: string;
-  setLocalBio: (value: string) => void;
+  bio: string;
+  onBioChange: (value: string) => void;
 }
 
-const BioSection = ({ localBio, setLocalBio }: Props) => {
+const BioSection = ({ bio, onBioChange }: Props) => {
   return (
     <div className="flex flex-col gap-4 lg:flex-row lg:gap-16 border-b-[0.5px] border-b-white/30 p-5">
       <div className="flex flex-col gap-2">
@@ -15,8 +15,8 @@ const BioSection = ({ localBio, setLocalBio }: Props) => {
       <textarea
         placeholder="Gago is one and only design system for intelligent, lazy Gen Z people."
         className="bg-[#0b0f23] border border-blue-600 min-w-1/2 min-h-[20vh] outline-0 p-2 rounded-xl text-white"
-        value={localBio}
-        onChange={(e) => setLocalBio(e.target.value)}
+        value={bio}
+        onChange={(e) => onBioChange(e.target.value)}
       ></textarea>
     </div>
   );

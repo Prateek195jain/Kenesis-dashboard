@@ -1,5 +1,5 @@
-import Checkbox from "../Checkbox";
-import type { CheckboxProps } from "../type";
+import Checkbox from "../components/Checkbox";
+import type { CheckboxProps } from "../components/type";
 
 interface Props {
   checkBoxData: CheckboxProps[];
